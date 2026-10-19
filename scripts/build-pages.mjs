@@ -58,45 +58,65 @@ function walk(dir, out = []) {
   return out;
 }
 
-/** public 里的绝对路径资源补上项目前缀（HTML 与 RSC payload 都会命中） */
+/**
+ * public 里的绝对路径资源补上项目前缀。
+ * Next 只会给 /_next/ 和 <Link> 自动加 basePath，public 下的字符串路径它不管：
+ *  - HTML / RSC payload 里是 `"/images/...`（双引号）
+ *  - CSS 里是 `url(/images/...)`（无引号）——这一条最容易漏，漏了就 404
+ *  - JS chunk 里可能藏着字符串字面量（品牌 logo 兜底路径）
+ * 只替换「紧跟在引号/括号/等号/冒号/逗号之后」的裸路径，已经带前缀的不会被二次替换。
+ */
+const ASSET_ROOTS = ["/images/", "/video/", "/brands/", "/templates/", "/favicon.svg"];
+
 function prefixAssets() {
-  const targets = walk(OUT).filter((file) => /\.(html|txt|xml|json)$/.test(file));
+  const targets = walk(OUT).filter((file) => /\.(html|txt|xml|json|css|js)$/.test(file));
   let touched = 0;
+  let hits = 0;
   for (const file of targets) {
     const before = readFileSync(file, "utf8");
-    const after = before
-      .replaceAll('"/images/', `"${BASE_PATH}/images/`)
-      .replaceAll('"/video/', `"${BASE_PATH}/video/`)
-      .replaceAll('"/brands/', `"${BASE_PATH}/brands/`);
+    let after = before;
+    for (const root of ASSET_ROOTS) {
+      const escaped = root.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      after = after.replace(new RegExp(`(^|[\\s"'(:=,])${escaped}`, "g"), (match, lead) => {
+        hits += 1;
+        return `${lead}${BASE_PATH}${root}`;
+      });
+    }
     if (after !== before) {
       writeFileSync(file, after);
       touched += 1;
     }
   }
-  console.log(`assets prefixed in ${touched} files -> ${BASE_PATH}`);
+  console.log(`assets prefixed: ${hits} refs in ${touched} files -> ${BASE_PATH}`);
 }
 
 const cleanEnv = { ...process.env };
 delete cleanEnv.STATIC_EXPORT;
 
-try {
-  moveAside();
-  rmSync(OUT, { recursive: true, force: true });
-  // 上一次 dev 跑出来的 .next/dev/types 会引用已移走的 admin/api 路由，必须清掉再构建
-  rmSync(path.join(ROOT, ".next"), { recursive: true, force: true });
-  execSync("npx next build", {
-    stdio: "inherit",
-    env: {
-      ...cleanEnv,
-      STATIC_EXPORT: "1",
-      STATIC_BASE_PATH: BASE_PATH,
-      NEXT_PUBLIC_STATIC_EXPORT: "1",
-      NEXT_PUBLIC_SITE_URL: SITE_URL,
-      NODE_ENV: "production",
-    },
-  });
-} finally {
-  restore();
+/* POST_ONLY=1：不重新 next build，只对现有 out/ 重跑后处理（补前缀 / 载荷 / sitemap）。
+   调试后处理逻辑时省掉一遍全站构建。 */
+const POST_ONLY = process.env.POST_ONLY === "1";
+
+if (!POST_ONLY) {
+  try {
+    moveAside();
+    rmSync(OUT, { recursive: true, force: true });
+    // 上一次 dev 跑出来的 .next/dev/types 会引用已移走的 admin/api 路由，必须清掉再构建
+    rmSync(path.join(ROOT, ".next"), { recursive: true, force: true });
+    execSync("npx next build", {
+      stdio: "inherit",
+      env: {
+        ...cleanEnv,
+        STATIC_EXPORT: "1",
+        STATIC_BASE_PATH: BASE_PATH,
+        NEXT_PUBLIC_STATIC_EXPORT: "1",
+        NEXT_PUBLIC_SITE_URL: SITE_URL,
+        NODE_ENV: "production",
+      },
+    });
+  } finally {
+    restore();
+  }
 }
 
 if (!existsSync(OUT)) {
