@@ -185,11 +185,13 @@ writeFileSync(
 );
 writeFileSync(path.join(OUT, ".nojekyll"), "");
 
-/* 从导出结果反推 sitemap：凡是 out/<locale>/…/index.html 都算一页 */
+/* 从导出结果反推 sitemap：凡是 out/<locale>/…/index.html 都算一页。
+   404 与 _not-found 是错误页，不进 sitemap。 */
 const pages = walk(OUT)
   .filter((file) => file.endsWith("index.html"))
   .map((file) => path.dirname(path.relative(OUT, file)).split(path.sep).join("/"))
   .filter((dir) => dir && dir !== ".")
+  .filter((dir) => !/^(404|_not-found)(\/|$)/.test(dir))
   .sort();
 const today = new Date().toISOString().slice(0, 10);
 const urls = pages
@@ -197,7 +199,7 @@ const urls = pages
   .join("\n");
 writeFileSync(
   path.join(OUT, "sitemap.xml"),
-  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`
 );
 writeFileSync(
   path.join(OUT, "robots.txt"),
