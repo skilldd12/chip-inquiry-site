@@ -1,0 +1,10 @@
+:HL["/chip-inquiry-site/_next/static/chunks/3nqd37kw30yca.css","style"]
+:HL["/chip-inquiry-site/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/chip-inquiry-site/_next/static/media/99e609270109b47d-s.p.40sczeszzbjw1.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/chip-inquiry-site/_next/static/media/9c72aa0f40e4eef8-s.p.1y4-pdgsjb-pw.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/chip-inquiry-site/_next/static/media/effe91970fc4db64-s.p.0oace-s_gkfks.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/chip-inquiry-site/_next/static/chunks/0wy1-g1k21urw.css","style"]
+3:[["children",{"s":"__PAGE__","h":160}]]
+2:[["children",{"s":"warehouse-quality","h":64,"c":"$Q3"}]]
+1:[["children",{"s":{"n":"locale","t":"d","k":"ru","s":[]},"h":48,"c":"$Q2"}]]
+0:{"b":"Gipa0qmggY4tmRkhy5Tda","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
