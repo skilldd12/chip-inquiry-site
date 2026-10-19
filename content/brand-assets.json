@@ -1,0 +1,156 @@
+{
+  "ti": {
+    "file": "brands/ti.svg",
+    "provider": "Worldvectorlogo",
+    "url": "https://cdn.worldvectorlogo.com/logos/texas-instruments.svg",
+    "viewBox": "2.7928 64.933 187.0852 62.9522",
+    "removeCanvas": true
+  },
+  "adi": {
+    "file": "brands/adi.svg",
+    "provider": "Worldvectorlogo",
+    "url": "https://cdn.worldvectorlogo.com/logos/analog-devices.svg",
+    "viewBox": "2.834 68.848 187.0971 55.06",
+    "removeCanvas": true
+  },
+  "st": {
+    "file": "brands/st.svg",
+    "provider": "Simple Icons",
+    "icon": "siStmicroelectronics",
+    "source": "https://www.st.com",
+    "viewBox": "-0.0002 5.61 24.0003 12.7794"
+  },
+  "nxp": {
+    "file": "brands/nxp.svg",
+    "provider": "Simple Icons",
+    "icon": "siNxp",
+    "source": "https://www.nxp.com",
+    "viewBox": "0 7.9138 24 8.1725"
+  },
+  "infineon": {
+    "file": "brands/infineon.svg",
+    "provider": "Manufacturer",
+    "url": "https://www.infineon.com/etc.clientlibs/ifx/components/common/mainnavigation/clientlibs/resources/logo.svg",
+    "viewBox": "0 0 90.8313 39.7792"
+  },
+  "microchip": {
+    "file": "brands/microchip.png",
+    "provider": "Manufacturer",
+    "url": "https://www.microchip.com/content/experience-fragments/mchp/en_us/site/header/master/_jcr_content/root/responsivegrid/header/logo.coreimg.png/1605828081463/microchip.png"
+  },
+  "renesas": {
+    "file": "brands/renesas.svg",
+    "provider": "Worldvectorlogo",
+    "url": "https://cdn.worldvectorlogo.com/logos/renesas.svg",
+    "viewBox": "8.5049 82.3521 175.7481 28.0499",
+    "removeCanvas": true
+  },
+  "intel": {
+    "file": "brands/intel.svg",
+    "provider": "Simple Icons",
+    "icon": "siIntel",
+    "source": "https://www.intel.com",
+    "viewBox": "0 7.345 24 9.311"
+  },
+  "amd": {
+    "file": "brands/amd.svg",
+    "provider": "Simple Icons",
+    "icon": "siAmd",
+    "source": "https://www.amd.com",
+    "viewBox": "0 9.137 24 5.726"
+  },
+  "onsemi": {
+    "file": "brands/onsemi.svg",
+    "provider": "Manufacturer",
+    "url": "https://www.onsemi.com/images/logo/onsemi_logo_full_color.svg",
+    "viewBox": "0 -0.1 432.8 75.7"
+  },
+  "vishay": {
+    "file": "brands/vishay.svg",
+    "provider": "Worldvectorlogo",
+    "url": "https://cdn.worldvectorlogo.com/logos/vishay.svg",
+    "viewBox": "2.834 22.739 187.088 158.616",
+    "removeCanvas": true
+  },
+  "murata": {
+    "file": "brands/murata.svg",
+    "provider": "Manufacturer",
+    "url": "https://www.murata.com/-/media/siterenewal/business/commons/icons/logo.ashx?la=en&cvid=20220419093335000000"
+  },
+  "tdk": {
+    "file": "brands/tdk.png",
+    "provider": "Manufacturer",
+    "url": "https://www.tdk.com/themes/custom/tdkcom/src/assets/images/TDK_logo_blue.png"
+  },
+  "espressif": {
+    "file": "brands/espressif.svg",
+    "provider": "Simple Icons",
+    "icon": "siEspressif",
+    "source": "https://www.espressif.com",
+    "viewBox": "0.0009 -0.0002 23.9991 24.0003"
+  },
+  "nordic": {
+    "file": "brands/nordic.svg",
+    "provider": "Simple Icons",
+    "icon": "siNordicsemiconductor",
+    "source": "https://www.nordicsemi.com",
+    "viewBox": "0 1.4729 24 21.0538"
+  },
+  "samsung": {
+    "file": "brands/samsung.svg",
+    "provider": "Simple Icons",
+    "icon": "siSamsung",
+    "source": "https://www.samsung.com/us/about-us/brand-identity/logo/",
+    "viewBox": "0 10.1662 24 3.6676"
+  },
+  "micron": {
+    "file": "brands/micron.svg",
+    "provider": "Worldvectorlogo",
+    "url": "https://cdn.worldvectorlogo.com/logos/micron-technology.svg",
+    "viewBox": "-0.0285 -0.0686 300.0925 82.8166"
+  },
+  "toshiba": {
+    "file": "brands/toshiba.svg",
+    "provider": "Simple Icons",
+    "icon": "siToshiba",
+    "source": "https://www.toshiba.com",
+    "viewBox": "0 10.172 24 3.656"
+  },
+  "rohm": {
+    "file": "brands/rohm.svg",
+    "provider": "Manufacturer",
+    "url": "https://www.rohm.com/o/rohm-theme/images/rohm-theme/rohm_logo.svg",
+    "viewBox": "0 0 1200 923.05"
+  },
+  "broadcom": {
+    "file": "brands/broadcom.svg",
+    "provider": "Manufacturer",
+    "url": "https://www.broadcom.com/img/broadcom-logo.svg"
+  },
+  "qualcomm": {
+    "file": "brands/qualcomm.png",
+    "provider": "Manufacturer website CDN",
+    "url": "https://cdn.cookielaw.org/logos/b0a5f2cc-0b29-4907-89bf-3f6b380a03c8/019b2956-bc55-75aa-8570-6d773b2bae4b/5e4f142a-c83a-4c87-9ff6-54a22a735113/1280px-Qualcomm-Logo.svg.png",
+    "source": "https://www.qualcomm.com/home"
+  },
+  "panasonic": {
+    "file": "brands/panasonic.svg",
+    "provider": "Simple Icons",
+    "icon": "siPanasonic",
+    "source": "https://www.panasonic.com",
+    "viewBox": "0 10.1612 24 3.6775"
+  },
+  "nexperia": {
+    "file": "brands/nexperia.svg",
+    "provider": "Manufacturer",
+    "url": "https://www.nexperia.com/.resources/nexperia-theme/images/logo.svg",
+    "viewBox": "0 0 230 56.352"
+  },
+  "nvidia": {
+    "file": "brands/nvidia.svg",
+    "provider": "Simple Icons",
+    "icon": "siNvidia",
+    "source": "https://www.nvidia.com",
+    "viewBox": "0 4.063 24 15.874"
+  }
+}
