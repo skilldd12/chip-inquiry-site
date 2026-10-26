@@ -1,6 +1,6 @@
 {
-  "release": "20261020-photographic",
-  "publishedAt": "2026-10-20T07:43:46.015Z",
+  "release": "20261026-zyx-brand",
+  "publishedAt": "2026-10-26T03:31:16.229Z",
   "site": "https://skilldd12.github.io/chip-inquiry-site/",
   "hero": "photographic-canvas",
   "languages": [
@@ -29,6 +29,39 @@
       "path": "images/hero-photo/interconnect.webp",
       "bytes": 334898,
       "sha256": "3695c300ec777159ba6f7628ff78efeb1aba617781209c5f454ab9cad916c17e"
+    }
+  ],
+  "brand": {
+    "name": "中屿新",
+    "english": "ZHONGYU XIN",
+    "initials": "ZYX"
+  },
+  "previousRelease": "20261020-photographic",
+  "brandAssets": [
+    {
+      "path": "images/brand/zyx-logo.png",
+      "bytes": 68478,
+      "sha256": "8d7079a8293c7ca05d0924a028c7e51467af68004f797dd9c223c260c0d1f37f"
+    },
+    {
+      "path": "images/brand/zyx-symbol.png",
+      "bytes": 24386,
+      "sha256": "65bc2b5d8d4e07b6bd586a075af5932ddc54dfd70d65857edf85b37b66c71973"
+    },
+    {
+      "path": "images/brand/zyx-social.png",
+      "bytes": 53971,
+      "sha256": "5d843a113c69d9073efa112352b26e6dd739f2d928d076851c9009466e86ba82"
+    },
+    {
+      "path": "zyx-icon.png",
+      "bytes": 8658,
+      "sha256": "8afdb394f7817dabaa71c202c378215f99d6f8cacf897b639807e6cd47042345"
+    },
+    {
+      "path": "zyx-apple-touch-icon.png",
+      "bytes": 5210,
+      "sha256": "a4efa2fc6e4b55e62ae73b099fc356cd3ad567f949a15b5078a15230230673fd"
     }
   ]
 }

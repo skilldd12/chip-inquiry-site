@@ -1,10 +1,6 @@
-:HL["/chip-inquiry-site/_next/static/chunks/2-l88z2377v1l.css","style"]
-:HL["/chip-inquiry-site/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/chip-inquiry-site/_next/static/media/99e609270109b47d-s.p.40sczeszzbjw1.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/chip-inquiry-site/_next/static/media/9c72aa0f40e4eef8-s.p.1y4-pdgsjb-pw.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/chip-inquiry-site/_next/static/media/effe91970fc4db64-s.p.0oace-s_gkfks.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/chip-inquiry-site/_next/static/chunks/1n6wdg5noc1bm.css","style"]
+:HL["/chip-inquiry-site/_next/static/css/209f720a34c7e24b.css","style"]
+:HL["/chip-inquiry-site/_next/static/css/4158465c57132e9d.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
-2:[["children",{"s":"faq","h":96,"c":"$Q3"}]]
-1:[["children",{"s":{"n":"locale","t":"d","k":"zh","s":[]},"h":112,"c":"$Q2"}]]
-0:{"b":"Jgqh3gATNPiXQRO2QvR6x","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+2:[["children",{"s":"faq","h":64,"c":"$Q3"}]]
+1:[["children",{"s":{"n":"locale","t":"d","k":"zh","s":["_not-found","_global-error"]},"h":48,"c":"$Q2"}]]
+0:{"b":"INvFIYID4rLK538juYlj3","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
